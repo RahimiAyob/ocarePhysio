@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ocare Physio Login</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to Ocare Physio</h1>
+    <p>Experience high quality physiotherapy care tailored to your needs.</p>
+
+    <div class="role-buttons">
+      <button class="active" onclick="setRole('patient', event)">Patient</button>
+      <button onclick="setRole('therapist', event)">Therapist</button>
+      <button onclick="setRole('admin', event)">Admin</button>
+    </div>
+
+    <form id="loginForm">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
